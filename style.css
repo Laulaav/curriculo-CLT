@@ -1,0 +1,13 @@
+body{
+    background:#B9F3FC;
+    /*background-image: url("img2/aubretia-1371599_960_720.webp");*/
+}
+    
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    
+h1, h2{
+    color:rgb(255, 0, 102);
+}
+    
