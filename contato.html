@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <form id="formularioDeContato">
+        <h2>Contato:</h2>
+        <label for="nome">Nome*:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="sobrenome">Sobrenome*:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required><br>
+        <label for="telefone">Telefone*:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="mensagem">Mensagem*:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea><br>
+
+        <label for="arquivo">Protótipo:</label>
+        <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.jpeg,.png">
+        <br>
+
+        <label for="linguagem">Qual linguagem você prefere?</label>
+        <select id="linguagem" name="linguagem" multiple>
+            <option value="java">Java</option>
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="php">PHP</option>
+        </select>
+        <br>
+
+        <label for="db">Banco de dados:</label><br>
+        <label for="mysql">MySQL</label>
+        <input type="radio" id="mysql" name="mysql" value="mysql">
+        <label for=""><strong>|</strong></label>
+        <label for="postgresql">Postgresql</label>
+        <input type="radio" id="postgresql" name="postgresql" value="postgresql">
+        <label for=""><strong>|</strong></label>
+        <label for="mongodb">MongoDB</label>
+        <input type="radio" id="mongodb" name="mongodb" value="mongodb">
+        <label for=""><strong>|</strong></label>
+        <label for="nenhuma">N/A</label>
+        <input type="radio" id="nenhuma" name="nenhuma" value="nenhuma">
+        <label for=""><strong>|</strong></label>
+        <label for="outra">Outra</label>
+        <input type="radio" id="outra" name="outra" value="outra">
+        <br>
+
+        <label for="turno">Turno para reuniões*:</label><br>
+        <input type="checkbox" id="manha" name="manha" value="manha">
+        <label for="manha">Manhã</label>
+        <label for=""><strong>|</strong></label>
+        <input type="checkbox" id="tarde" name="tarde" value="tarde">
+        <label for="tarde">Tarde</label>
+        <label for=""><strong>|</strong></label>
+        <input type="checkbox" id="noite" name="noite" value="noite">
+        <label for="noite">Noite</label>
+        <br>
+
+        <label for="horario">Horário sugerido:</label>
+        <input type="time" id="horario" name="horario">
+        <br>
+
+        <label for="data">Data prevista para entrega*:</label>
+        <input type="date" id="data" name="data" max="2050-12-31" required>
+        <br>
+
+        <label for="lingua">Idioma:</label>
+        <select id="lingua" name="lingua" required>
+            <option value="">Selecione uma opção</option>
+            <option value="ingles">Inglês</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="frances">Francês</option>
+            <option value="portugues-br">Português-br</option>
+        </select>
+    <br>
+    <br>
+        <input type="submit" value="Submit" onclick="validacaoDosCampos()">
+        <input type="reset">
+    </form>
+    <script type="text/javascript" src="comando.js"></script>
+
+</body>
+</html>
